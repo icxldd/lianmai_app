@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.TaskManagement.Domain</AssemblyName>
+		<PackageId>LINGYUN.Abp.TaskManagement.Domain</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LINGYUN.Abp.BackgroundTasks.Activities\LINGYUN.Abp.BackgroundTasks.Activities.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.BackgroundTasks.EventBus\LINGYUN.Abp.BackgroundTasks.EventBus.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.BackgroundTasks\LINGYUN.Abp.BackgroundTasks.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.TaskManagement.Domain.Shared\LINGYUN.Abp.TaskManagement.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

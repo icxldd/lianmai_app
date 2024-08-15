@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.OpenIddict.WeChat</AssemblyName>
+		<PackageId>LINGYUN.Abp.OpenIddict.WeChat</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LINGYUN\Abp\OpenIddict\WeChat\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\OpenIddict\WeChat\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.OpenIddict.AspNetCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\framework\wechat\LINGYUN.Abp.Identity.WeChat\LINGYUN.Abp.Identity.WeChat.csproj" />
+		<ProjectReference Include="..\..\..\framework\wechat\LINGYUN.Abp.WeChat.MiniProgram\LINGYUN.Abp.WeChat.MiniProgram.csproj" />
+		<ProjectReference Include="..\..\..\framework\wechat\LINGYUN.Abp.WeChat.Official\LINGYUN.Abp.WeChat.Official.csproj" />
+	</ItemGroup>
+
+</Project>

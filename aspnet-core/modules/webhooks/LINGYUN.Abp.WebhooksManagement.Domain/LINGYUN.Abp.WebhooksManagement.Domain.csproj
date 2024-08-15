@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.WebhooksManagement.Domain</AssemblyName>
+		<PackageId>LINGYUN.Abp.WebhooksManagement.Domain</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" />
+		<PackageReference Include="Volo.Abp.Caching" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" />
+		<PackageReference Include="Polly" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LINGYUN.Abp.WebhooksManagement.Domain.Shared\LINGYUN.Abp.WebhooksManagement.Domain.Shared.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.Webhooks\LINGYUN.Abp.Webhooks.csproj" />
+	</ItemGroup>
+
+</Project>

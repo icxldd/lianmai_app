@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.Dapr.Actors.AspNetCore.Wrapper</AssemblyName>
+		<PackageId>LINGYUN.Abp.Dapr.Actors.AspNetCore.Wrapper</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\common\LINGYUN.Abp.Wrapper\LINGYUN.Abp.Wrapper.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.Dapr.Actors.AspNetCore\LINGYUN.Abp.Dapr.Actors.AspNetCore.csproj" />
+	</ItemGroup>
+
+</Project>

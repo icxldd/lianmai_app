@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.IM.SignalR</AssemblyName>
+		<PackageId>LINGYUN.Abp.IM.SignalR</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\IM\SignalR\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LINGYUN\Abp\IM\SignalR\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore.SignalR" />
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LINGYUN.Abp.IM\LINGYUN.Abp.IM.csproj" />
+	</ItemGroup>
+
+</Project>

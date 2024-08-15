@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>LINGYUN.Abp.Account.Templates</AssemblyName>
+		<PackageId>LINGYUN.Abp.Account.Templates</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\Account\Emailing\Templates\*.tpl" />
+		<None Remove="LINGYUN\Abp\Account\Templates\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LINGYUN\Abp\Account\Emailing\Templates\*.tpl" />
+		<EmbeddedResource Include="LINGYUN\Abp\Account\Templates\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Emailing" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\LINGYUN.Abp.Account.Application.Contracts\LINGYUN.Abp.Account.Application.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

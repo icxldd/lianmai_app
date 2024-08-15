@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.LocalizationManagement.Application</AssemblyName>
+		<PackageId>LINGYUN.Abp.LocalizationManagement.Application</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\LINGYUN.Abp.LocalizationManagement.Domain\LINGYUN.Abp.LocalizationManagement.Domain.csproj" />
+	  <ProjectReference Include="..\LINGYUN.Abp.LocalizationManagement.Application.Contracts\LINGYUN.Abp.LocalizationManagement.Application.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

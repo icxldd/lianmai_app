@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>LINGYUN.Abp.Notifications.PushPlus</AssemblyName>
+		<PackageId>LINGYUN.Abp.Notifications.PushPlus</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LINGYUN.Abp.Notifications\LINGYUN.Abp.Notifications.csproj" />
+		<ProjectReference Include="..\..\..\framework\pushplus\LINGYUN.Abp.PushPlus\LINGYUN.Abp.PushPlus.csproj" />
+	</ItemGroup>
+
+</Project>

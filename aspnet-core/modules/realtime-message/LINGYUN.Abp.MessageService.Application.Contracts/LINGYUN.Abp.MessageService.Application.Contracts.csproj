@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>LINGYUN.Abp.MessageService.Application.Contracts</AssemblyName>
+		<PackageId>LINGYUN.Abp.MessageService.Application.Contracts</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application.Contracts" />
+		<PackageReference Include="Volo.Abp.Authorization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\MessageService\Localization\ApplicationContracts\*.json" />
+		<EmbeddedResource Include="LINGYUN\Abp\MessageService\Localization\ApplicationContracts\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LINGYUN.Abp.IM\LINGYUN.Abp.IM.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.MessageService.Domain.Shared\LINGYUN.Abp.MessageService.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

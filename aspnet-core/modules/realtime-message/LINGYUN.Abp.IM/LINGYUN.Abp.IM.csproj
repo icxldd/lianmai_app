@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>LINGYUN.Abp.IM</AssemblyName>
+		<PackageId>LINGYUN.Abp.IM</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\IM\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="LINGYUN\Abp\IM\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Auditing" />
+		<PackageReference Include="Volo.Abp.EventBus" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\framework\common\LINGYUN.Abp.IdGenerator\LINGYUN.Abp.IdGenerator.csproj" />
+		<ProjectReference Include="..\..\..\framework\common\LINGYUN.Abp.RealTime\LINGYUN.Abp.RealTime.csproj" />
+	</ItemGroup>
+
+</Project>

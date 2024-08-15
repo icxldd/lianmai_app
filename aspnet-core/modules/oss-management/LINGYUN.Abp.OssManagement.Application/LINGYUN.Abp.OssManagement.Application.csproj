@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.OssManagement.Application</AssemblyName>
+		<PackageId>LINGYUN.Abp.OssManagement.Application</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" />
+		<PackageReference Include="Volo.Abp.Caching" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\framework\settings\LINGYUN.Abp.Settings\LINGYUN.Abp.Settings.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.OssManagement.Application.Contracts\LINGYUN.Abp.OssManagement.Application.Contracts.csproj" />
+		<ProjectReference Include="..\LINGYUN.Abp.OssManagement.Domain\LINGYUN.Abp.OssManagement.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>LINGYUN.Abp.CachingManagement.Application</AssemblyName>
+		<PackageId>LINGYUN.Abp.CachingManagement.Application</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\LINGYUN.Abp.CachingManagement.Application.Contracts\LINGYUN.Abp.CachingManagement.Application.Contracts.csproj" />
+	  <ProjectReference Include="..\LINGYUN.Abp.CachingManagement.Domain\LINGYUN.Abp.CachingManagement.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

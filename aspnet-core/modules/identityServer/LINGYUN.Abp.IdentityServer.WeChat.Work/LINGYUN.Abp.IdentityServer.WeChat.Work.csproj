@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.IdentityServer.WeChat.Work</AssemblyName>
+		<PackageId>LINGYUN.Abp.IdentityServer.WeChat.Work</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="LINGYUN\Abp\IdentityServer\WeChat\Work\Localization\Resources\*.json" />
+		<EmbeddedResource Include="LINGYUN\Abp\IdentityServer\WeChat\Work\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.IdentityServer.Domain" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\framework\wechat\LINGYUN.Abp.WeChat.Work\LINGYUN.Abp.WeChat.Work.csproj" />
+	</ItemGroup>
+
+</Project>

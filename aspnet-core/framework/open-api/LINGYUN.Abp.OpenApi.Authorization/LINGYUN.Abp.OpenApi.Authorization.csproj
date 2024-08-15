@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.OpenApi.Authorization</AssemblyName>
+		<PackageId>LINGYUN.Abp.OpenApi.Authorization</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\common\LINGYUN.Abp.Wrapper\LINGYUN.Abp.Wrapper.csproj" />
+	  <ProjectReference Include="..\LINGYUN.Abp.OpenApi\LINGYUN.Abp.OpenApi.csproj" />
+	</ItemGroup>
+
+</Project>

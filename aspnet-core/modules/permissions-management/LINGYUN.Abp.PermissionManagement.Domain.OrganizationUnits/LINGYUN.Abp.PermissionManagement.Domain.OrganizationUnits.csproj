@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\configureawait.props" />
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>LINGYUN.Abp.PermissionManagement.Domain.OrganizationUnits</AssemblyName>
+		<PackageId>LINGYUN.Abp.PermissionManagement.Domain.OrganizationUnits</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.PermissionManagement.Domain" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\framework\authorization\LINGYUN.Abp.Authorization.OrganizationUnits\LINGYUN.Abp.Authorization.OrganizationUnits.csproj" />
+		<ProjectReference Include="..\..\identity\LINGYUN.Abp.Identity.Domain\LINGYUN.Abp.Identity.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
