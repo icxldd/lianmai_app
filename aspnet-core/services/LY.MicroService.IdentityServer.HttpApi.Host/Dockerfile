@@ -11,4 +11,4 @@ VOLUME [ "./app/Modules" ]
 RUN apt update
 RUN apt install wget -y
 
-ENTRYPOINT ["dotnet", "LY.MicroService.IdentityServer.HttpApi.Host.dll"]
+ENTRYPOINT ["dotnet", "LY.MicroService.identityServer.HttpApi.Host.dll"]
