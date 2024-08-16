@@ -198,7 +198,7 @@ namespace LINGYUN.Abp.Cli.Commands
                 await ReplaceFileTextAsync(projectFile, "PackageName", packageName);
                 await ReplaceFileTextAsync(projectFile, "CompanyName", companyName);
 
-                var defaultConnectionString = $"Server=127.0.0.1;Database={projectName};User Id=root;Password=123456";
+                var defaultConnectionString = $"Server=127.0.0.1;Database={projectName};User Id=root;Password=cxi1230123~";
                 connectionString ??= defaultConnectionString;
                 await ReplaceFileTextAsync(projectFile, defaultConnectionString, connectionString);
             }

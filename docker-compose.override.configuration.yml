@@ -8,22 +8,22 @@ services:
       - App__RefreshClaimsUrl=http://host.docker.internal-api:30015
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
       - Auditing__AllEntitiesSelector=true
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -34,11 +34,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=auth
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -64,22 +64,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -90,11 +90,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=ida
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -117,22 +117,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -143,11 +143,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=admin
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -173,22 +173,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -199,11 +199,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=lta
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -226,22 +226,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - RemoteServices__AbpIdentity__BaseUrl=http://apigateway:30000/
       - RemoteServices__AbpIdentity__IdentityClient=InternalServiceClient
       - IdentityClients__InternalServiceClient__Authority=http://auth-server:44385/
@@ -262,11 +262,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=platform
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -289,22 +289,22 @@ services:
       - AgileConfig__IsEnabled=false
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
       - Auditing__AllEntitiesSelector=true
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -315,11 +315,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=messages
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -344,22 +344,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -370,11 +370,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=messages
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -397,22 +397,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -423,11 +423,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=webhook
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -450,22 +450,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -477,11 +477,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=workflow
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
@@ -513,22 +513,22 @@ services:
       - AgileConfig__IsEnabled=false
       - Auditing__AllEntitiesSelector=true
       - App__CorsOrigins=http://localhost:3100,http://localhost:30000,http://apigateway:30000
-      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=123456
-      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=123456
-      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
-      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=123456
+      - ConnectionStrings__Default=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpAuditLogging=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpOpenIddict=Server=host.docker.internal;Database=AuthServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentity=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpIdentityServer=Server=host.docker.internal;Database=IdentityServer-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSaas=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTenantManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpFeatureManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpSettingManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpPermissionManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpLocalizationManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__AbpTextTemplating=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__TaskManagement=Server=host.docker.internal;Database=Platform-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Workflow=Server=host.docker.internal;Database=Workflow-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__Notifications=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
+      - ConnectionStrings__MessageService=Server=host.docker.internal;Database=Messages-V70;User Id=root;Password=cxi1230123~
       - Encryption__PassPhrase=s46c5q55nxpeS8Ra
       - Encryption__InitVector=s83ng0abvd02js84
       - Encryption__Salt=sf&5)s3#
@@ -540,11 +540,11 @@ services:
       - CAP__RabbitMQ__HostName=host.docker.internal
       - CAP__RabbitMQ__Port=5672
       - CAP__RabbitMQ__UserName=admin
-      - CAP__RabbitMQ__Password=123456
+      - CAP__RabbitMQ__Password=admin
       - CAP__RabbitMQ__ExchangeName=LINGYUN.Abp.Application
       - CAP__RabbitMQ__VirtualHost=/
       - CAP__MySql__TableNamePrefix=wechat
-      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=123456
+      - CAP__MySql__ConnectionString=Server=host.docker.internal;Database=Platform-v70;User Id=root;Password=cxi1230123~
       - DistributedCache__HideErrors=true
       - DistributedCache__KeyPrefix=LINGYUN.Abp.Application
       - DistributedCache__GlobalCacheEntryOptions__SlidingExpiration=30:00:00
