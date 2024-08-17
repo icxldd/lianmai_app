@@ -21,7 +21,7 @@ public class AppApplicationModule : AbpModule
 
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddProfile<AppApplicationMapperProfile>(validate: true);
+            options.AddProfile<AppApplicationMapperProfile>(validate: false);
         });
     }
 }

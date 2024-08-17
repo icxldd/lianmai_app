@@ -1,6 +1,12 @@
-﻿namespace App.Icxl.App;
+﻿using System.Threading.Tasks;
 
-public class SimpleAppService
+namespace App.Icxl.App;
+
+
+public class SimpleAppService:AppAppServiceBase, ISimpleAppService
 {
-    
+    public Task<string> TestApi(string text)
+    {
+        return Task.FromResult("123");
+    }
 }

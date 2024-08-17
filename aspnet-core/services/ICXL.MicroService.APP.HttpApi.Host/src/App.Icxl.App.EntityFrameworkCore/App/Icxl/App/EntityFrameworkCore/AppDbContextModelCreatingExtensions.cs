@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace App.Icxl.App.EntityFrameworkCore;
 
@@ -17,5 +18,13 @@ public static class AppDbContextModelCreatingExtensions
             AppDbProperties.DbSchema
         );
         optionsAction?.Invoke(options);
+        
+        
+        
+        builder.Entity<TestHome>(b =>
+        {
+            b.ToTable(options.TablePrefix + "TestHome", options.Schema);
+            b.ConfigureFullAuditedAggregateRoot();
+        });
     }
 }

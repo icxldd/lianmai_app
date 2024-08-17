@@ -18,4 +18,6 @@ public class AppDbContext : AbpDataProtectionDbContext<AppDbContext>, IAppDbCont
 
         modelBuilder.ConfigureApp();
     }
+
+    public DbSet<TestHome> TestHome { get; set; }
 }

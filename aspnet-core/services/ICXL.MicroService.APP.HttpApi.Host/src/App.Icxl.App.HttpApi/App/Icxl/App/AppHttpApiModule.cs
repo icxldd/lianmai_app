@@ -12,6 +12,7 @@ namespace App.Icxl.App;
 [DependsOn(
     typeof(AbpAspNetCoreMvcModule),
     typeof(AppApplicationContractsModule),
+    typeof(AppApplicationModule),
     typeof(AbpDynamicQueryableHttpApiModule))]
 public class AppHttpApiModule : AbpModule
 {
@@ -37,6 +38,14 @@ public class AppHttpApiModule : AbpModule
             options.Resources
                 .Get<AppResource>()
                 .AddBaseTypes(typeof(AbpValidationResource));
+        });
+        
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.MinifyGeneratedScript = true;
+            options
+                .ConventionalControllers
+                .Create(typeof(AppApplicationModule).Assembly, opts => { opts.RootPath = "app"; });
         });
     }
 }
