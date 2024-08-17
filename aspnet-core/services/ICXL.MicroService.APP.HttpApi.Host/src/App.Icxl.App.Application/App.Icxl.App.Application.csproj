@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../../common.props" />
+	<Import Project="../../configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>App.Icxl.App.Application</AssemblyName>
+		<PackageId>App.Icxl.App.Application</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Application" />
+		<PackageReference Include="LINGYUN.Abp.Dynamic.Queryable.Application" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\App.Icxl.App.Application.Contracts\App.Icxl.App.Application.Contracts.csproj" />
+	  <ProjectReference Include="..\App.Icxl.App.Domain\App.Icxl.App.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

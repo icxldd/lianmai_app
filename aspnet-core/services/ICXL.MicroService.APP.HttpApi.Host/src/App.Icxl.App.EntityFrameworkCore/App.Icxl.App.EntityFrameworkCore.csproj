@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../../common.props" />
+	<Import Project="../../configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>App.Icxl.App.EntityFrameworkCore</AssemblyName>
+		<PackageId>App.Icxl.App.EntityFrameworkCore</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.MySql" />
+		<PackageReference Include="LINGYUN.Abp.Data.DbMigrator" />
+		<PackageReference Include="LINGYUN.Abp.DataProtection.EntityFrameworkCore" />
+		<PackageReference Include="LINGYUN.Abp.Saas.EntityFrameworkCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\App.Icxl.App.Domain\App.Icxl.App.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

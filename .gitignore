@@ -1,12 +1,10 @@
 .DS_Store
 node_modules
 /dist
-vue.config.js
 task
 obj
 bin
 Logs
-appsettings.Production.json
 appsettings.secrets.json
 tempkey.jwk
 .vs
@@ -39,5 +37,5 @@ yarn-error.log*
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
+
 *.sw*

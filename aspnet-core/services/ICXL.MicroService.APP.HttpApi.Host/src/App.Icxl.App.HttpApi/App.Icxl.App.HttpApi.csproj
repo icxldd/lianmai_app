@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../../common.props" />
+	<Import Project="../../configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>App.Icxl.App.HttpApi</AssemblyName>
+		<PackageId>App.Icxl.App.HttpApi</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc" />
+		<PackageReference Include="LINGYUN.Abp.Dynamic.Queryable.HttpApi" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\App.Icxl.App.Application.Contracts\App.Icxl.App.Application.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

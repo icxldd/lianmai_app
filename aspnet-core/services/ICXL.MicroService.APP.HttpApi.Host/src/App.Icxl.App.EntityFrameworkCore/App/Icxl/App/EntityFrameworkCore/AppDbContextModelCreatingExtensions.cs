@@ -1,0 +1,21 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using Volo.Abp;
+
+namespace App.Icxl.App.EntityFrameworkCore;
+
+public static class AppDbContextModelCreatingExtensions
+{
+    public static void ConfigureApp(
+        this ModelBuilder builder,
+        Action<AppModelBuilderConfigurationOptions> optionsAction = null)
+    {
+        Check.NotNull(builder, nameof(builder));
+
+        var options = new AppModelBuilderConfigurationOptions(
+            AppDbProperties.DbTablePrefix,
+            AppDbProperties.DbSchema
+        );
+        optionsAction?.Invoke(options);
+    }
+}

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../../common.props" />
+	<Import Project="../../configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+		<AssemblyName>App.Icxl.App.Domain.Shared</AssemblyName>
+		<PackageId>App.Icxl.App.Domain.Shared</PackageId>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="App\Icxl\App\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="App\Icxl\App\Localization\Resources\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Auditing" />
+		<PackageReference Include="Volo.Abp.EventBus" />
+		<PackageReference Include="Volo.Abp.Localization" />
+	</ItemGroup>
+
+</Project>

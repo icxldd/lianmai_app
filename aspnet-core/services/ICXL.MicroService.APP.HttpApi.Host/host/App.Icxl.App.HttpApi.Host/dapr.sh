@@ -1,0 +1,1 @@
+﻿dapr run --app-id App --app-port 43699 -H 32570 -- dotnet run --no-build
