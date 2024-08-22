@@ -8,6 +8,7 @@ public class AppApplicationMapperProfile : Profile
     {
 
         CreateMap<TestHome, TestHomeDto>();
+
         CreateMap<TestHome, TestHomeCreateOrEditDto>().ReverseMap();
     }
 }
