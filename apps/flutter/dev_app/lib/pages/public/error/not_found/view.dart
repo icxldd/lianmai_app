@@ -1,4 +1,4 @@
-import 'package:bruno/bruno.dart';
+// import 'package:bruno/bruno.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -7,7 +7,10 @@ class PageNotFound extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    /**
+     * 
+     * 
+     * Scaffold(
       appBar: AppBar(
         title: Text("404Message".tr)
       ),
@@ -18,6 +21,8 @@ class PageNotFound extends StatelessWidget {
         ),
         content: "404MessageDetail".tr,
       ),
-    );
+    )
+     */
+    return Container();
   }
 }

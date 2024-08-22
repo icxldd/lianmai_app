@@ -3,7 +3,7 @@ import 'package:core/dependency/index.dart';
 import 'package:core/services/session.service.dart';
 import 'package:core/services/theme.service.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_picker/flutter_picker.dart';
+// import 'package:flutter_picker/flutter_picker.dart';
 import 'package:get/get.dart';
 
 class CenterSettingsController extends GetxController {
@@ -49,23 +49,23 @@ class CenterSettingsController extends GetxController {
 
   /// 切换主题色对话框
   void showThemeModalPicker(BuildContext context) {
-    var picker = Picker(
-      adapter: PickerDataAdapter(
-        pickerData: ['Theme:Light'.tr, 'Theme:Dark'.tr, 'Theme:System'.tr ],
-        isArray: false,
-      ),
-      selecteds: [themeModeIndex],
-      title: Text('Label:Theme'.tr),
-      cancelText: 'Label:Cancel'.tr,
-      confirmText: 'Label:Confirm'.tr,
-      height: 210,
-      itemExtent: 40,
-      selectedTextStyle: const TextStyle(color: Colors.blue),
-      onConfirm: (picker, indexs) {
-        themeService.changeThemeMode(themeModeMap[indexs[0]]!);
-      },
-      backgroundColor: Theme.of(context).colorScheme.background,
-    );
-    picker.showModal(context);
+    // var picker = Picker(
+    //   adapter: PickerDataAdapter(
+    //     pickerData: ['Theme:Light'.tr, 'Theme:Dark'.tr, 'Theme:System'.tr ],
+    //     isArray: false,
+    //   ),
+    //   selecteds: [themeModeIndex],
+    //   title: Text('Label:Theme'.tr),
+    //   cancelText: 'Label:Cancel'.tr,
+    //   confirmText: 'Label:Confirm'.tr,
+    //   height: 210,
+    //   itemExtent: 40,
+    //   selectedTextStyle: const TextStyle(color: Colors.blue),
+    //   onConfirm: (picker, indexs) {
+    //     themeService.changeThemeMode(themeModeMap[indexs[0]]!);
+    //   },
+    //   backgroundColor: Theme.of(context).colorScheme.background,
+    // );
+    // picker.showModal(context);
   }
 }
