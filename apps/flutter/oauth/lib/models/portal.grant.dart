@@ -16,7 +16,7 @@ class PortalPasswordGrant extends PasswordGrant {
   @override
   RequestOptions handle(RequestOptions request) {
     request.data = {
-      "grant_type": "portal",
+      "grant_type": "password",
       "username": username,
       "password": password,
       "scope": scope.join(' '),

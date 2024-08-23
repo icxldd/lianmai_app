@@ -3,7 +3,7 @@
         "name": "app-flutter"
     },
     "auth": {
-        "clientId": "abp-flutter",
+        "clientId": "vue-admin-client",
         "clientSecret": "1q2w3e*",
         "authority": "http://127.0.0.1:30000"
     },
